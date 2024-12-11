@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quý lắm mới mời</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <h1>Lời Mời 🫶</h1>
+  <button id="playButton" onclick="generateRandomNotifications()">Ấn Đây Này Ko Mất Fb đâu!?</button>
+  <div class="final-message" id="finalMessage" onclick="redirectToNewPage()">
+    <p id="text1"></p>
+    <p id="text2"></p>
+  </div>
+  <audio id="audioPlayer" src="./Pic.mp3"></audio> 
+  <script>
+    const playButton = document.getElementById("playButton");
+    const audioPlayer = document.getElementById("audioPlayer");
+
+    playButton.addEventListener("click", function() {
+        audioPlayer.play();
+    });
+</script>
+<script src="./script.js"></script>
+</body>
+
+</html>
